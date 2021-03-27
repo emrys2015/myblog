@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+<!-- head: head bar with -->
+<nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment in-padded-tb-mini ty-shadow-small">
+    <div class="ui container">
+        <div class="ui stackable inverted secondary  menu">
+            <h2 class="ui olive header item"> Emrys Yang</h2>
+            <a href="#" class="in-item item in-mobile-hide"><i class="home icon"></i>Home </a>
+            <a href="#" class="in-item item in-mobile-hide">Categories</a>
+            <a href="#" class="in-item item in-mobile-hide"><i class="tags icon"></i>Tags </a>
+            <a href="#" class="in-item item in-mobile-hide">Archive </a>
+            <a href="#" class="in-item item in-mobile-hide"><i class="chess queen icon"></i>
+                About me</a>
+            <div class="right in-item menu in-mobile-hide">
+                <div class="item">
+                    <div class="ui transparent icon input">
+                        <input type="text" placeholder="Search content……">
+                        <i class="inverted search icon"></i>
+                        <!-- <i class="search link icon"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button in-top-right in-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!-- middle -->
+<div class="in-container in-padded-tb-spacehuge">
+
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!-- blog general content -->
+            <div class="eleven wide column">
+                <!-- head -->
+                <div class="ui top attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui olive header">Blog</h3>
+                        </div>
+                        <div class="right aligned column">
+                            total of
+                            <h2 class="ui violet header in-trans-high in-inline-block" th:text="${page.totalElements}">14</h2> blogs
+                        </div>
+                    </div>
+                </div>
+
+                <!-- blog content -->
+                <div class="ui attached segment">
+                    <div class="ui padded vertical segment in-padded-tb-spacelarge in-padded-small">
+                        <div class="ui mobile reversed stackable grid" th:each="blog : ${page.content}">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">
+                                    <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="in-black" th:text="${blog.title}">
+                                    A Rainy Night
+                                    </a>
+                                </h3>
+                                <p class="in-text-one" th:text="|${blog.description}......|">AD. 3018, St. Louis, Missouri, USA. I left that damn tobacco-box at the police station. Moran said to himself, sat in his worm-eaten velvet sofa, and put his old pipe back on the coffee table. The household Android
+                                    in front of him had reached A-level damage.
+                                </p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1/100/100" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                                                <div class="content">
+                                                    <a href="#" class="header" th:text="${blog.user.nickname}">Emrys Yang</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar alternate icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2019-08-24</span>
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> <span th:text="${blog.views}">60</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column ">
+                                        <a href="#" target="_blank " class="ui olive basic in-trans-low label in-text-thin" th:text="${blog.type.name}">original story</a>
+                                        <!-- <a href="# " target="_blank " class="ui olive basic in-trans-mid label in-padded-tiny ">cyberpunk</a> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="five wide column ">
+                                <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank ">
+                                    <img src="https://unsplash.it/800/450?image=1005" alt="" th:src="@{${blog.firstPicture}}" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment in-padded-tb-spacelarge in-padded-small">
+                        <div class="ui stackable grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">A Rainy Night</h3>
+                                <p class="in-text-one">AD. 3018, St. Louis, Missouri, USA. I left that damn tobacco-box at the police station. Moran said to himself, sat in his worm-eaten velvet sofa, and put his old pipe back on the coffee table. The household Android
+                                    in front of him had reached A-level damage.
+                                </p>
+                                <div class="ui stackable grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1/100/100" alt=" " class="ui avatar image">
+                                                <div class="content">
+                                                    <a href="#" class="header">Emrys Yang</a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar alternate icon"></i> 2019-08-24
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 60
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column ">
+                                        <a href="#" target="_blank " class="ui olive basic in-trans-low label in-text-thin">original story</a>
+                                        <!-- <a href="# " target="_blank " class="ui olive basic in-trans-mid label in-padded-tiny ">cyberpunk</a> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="five wide column ">
+                                <a href="#" target="_blank ">
+                                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- footer -->
+                <div class="ui bottom attached segment">
+                    <div class="ui middle aligned two column stackable grid ">
+                        <div class="column ">
+                            <a href="#" class="ui olive basic in-trans-low button ">Back</a>
+                        </div>
+                        <div class="right aligned column ">
+                            <a href="#" class="ui olive basic in-trans-low button ">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- side bar on the right-->
+            <div class="five wide column ">
+                <!-- Category -->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="lightbulb outline icon"></i> Category
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui olive segment">
+                        <div class="ui fluid vertical menu">
+                            <a href="#" class="item">
+                                original story
+                                <div class="ui olive basic left pointing in-trans-mid label">4</div>
+                            </a>
+                            <a href="#" class="item">
+                                cyberpunk
+                                <div class="ui olive basic left pointing in-trans-mid label">2</div>
+                            </a> <a href="#" class="item">
+                            artworks
+                            <div class="ui olive basic left pointing in-trans-mid label">20</div>
+                        </a> <a href="#" class="item">
+                            Avangers Series
+                            <div class="ui olive basic left pointing in-trans-mid label">3</div>
+                        </a> <a href="#" class="item">
+                            Cats
+                            <div class="ui olive basic left pointing in-trans-mid label">16</div>
+                        </a> <a href="#" class="item">
+                            original photo
+                            <div class="ui olive basic left pointing in-trans-mid label">14</div>
+                        </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tags -->
+                <div class="ui segments in-margin-tb-large">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="tags icon"></i> Tags
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui olive segment">
+                        <a href="#" target="_blank" class="ui olive basic left in-trans-low horizontal label in-margin-tb-tiny">
+                            cyberpunk <div class="detail">23</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui orange basic left in-trans-low horizontal label in-margin-tb-tiny">
+                            cute <div class="detail">23</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui pink basic left in-trans-mid horizontal label in-margin-tb-tiny">
+                            catlovers <div class="detail">23</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left in-trans-low horizontal label in-margin-tb-tiny">
+                            bedstory <div class="detail">23</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- newly recommand -->
+                <div class="ui segments in-margin-tb-large">
+                    <div class="ui secondary segment">
+                        <i class="bookmark icon"></i>Recommand Readings
+                    </div>
+                    <div class="ui olive segment">
+                        <a href="#" target="_blank" class="in-black in-text-thin">A Rainy Night</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="in-black in-text-thin">A Rainy Night</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="in-black in-text-thin">A Rainy Night</a>
+                    </div>
+                </div>
+                <!-- 2-d QR code -->
+                <h4 class="ui horizontal divider header in-margin-tb-large"> <i class="weixin icon"></i>WeChat Scan</h4>
+                <div class="ui centered card" style="width: 11em">
+                    <img src="../static/images/WCP.jpg" th:src="@{/images/WCP.jpg}" alt="" class="ui rounded image">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<!-- foot -->
+<footer th:replace="_fragments :: footer"  class="ui inverted vertical segment in-padded-tb-spacem ">
+    <div class="ui center aligned container ">
+        <div class="ui inverted divided stackable grid ">
+            <div class="three wide column ">
+                <div class="ui inverted link list ">
+                    <div class="item ">
+                        <img src="../static/images/WCP.jpg" th:src="@{/images/WCP.jpg}" alt=" " class="ui rounded image " style="width: 120px; ">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column ">
+                <h4 class="ui inverted header in-text-thin in-text-spaced ">Latest Posts</h4>
+                <div class="ui inverted link list ">
+                    <a href="# " class="item ">Avangers Series: Captain America</a>
+                    <a href="# " class="item ">Avangers Series: Iron Man</a>
+                    <a href="# " class="item ">Avangers Series: Loki</a>
+                </div>
+            </div>
+
+            <div class="three wide column ">
+                <h4 class="ui inverted header in-text-thin in-text-spaced ">Contact Me</h4>
+                <div class="ui inverted link list ">
+                    <a href="# " class="item ">Email: feijun1997@gmail.com</a>
+                    <a href="# " class="item ">WeChat: feijun1997</a>
+                    <a href="# " class="item ">Facebook: TBA</a>
+                </div>
+            </div>
+            <div class="seven wide column ">
+                <h4 class="ui inverted header in-text-thin in-text-spaced ">Emrys Yang</h4>
+
+                <p class="in-trans-low ">This is a personal blog design for posting my personal thoughts, my cats, my artworks, and some interesting short fictions all written originally by me.</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider "></div>
+        <p class="in-text-thin in-text-spaced in-trans-mid ">Copyright © 2019 Emrys Yang </p>
+    </div>
+
+</footer>
+<!--    /*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js "></script>
+<!--    /*/</th:block>/*/-->
+
+<script>
+    $('.menu.toggle').click(function() {
+        $('.in-item').toggleClass('in-mobile-hide');
+    })
+</script>
+</body>
+
+</html>

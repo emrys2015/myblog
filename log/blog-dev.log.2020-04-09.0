@@ -1,0 +1,632 @@
+2020-04-09 00:02:07.032  INFO 27703 --- [Thread-99] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:02:07.390  INFO 27703 --- [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2020-04-09 00:02:07.450  INFO 27703 --- [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2020-04-09 00:02:09.130  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 00:02:09.130 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 00:02:09.130  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 00:02:10.463  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 00:02:10.520  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 1 repository interfaces.
+2020-04-09 00:02:10.617  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 00:02:11.374  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 00:02:11.390  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 00:02:11.391  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 00:02:11.418  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 00:02:11.418  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2282 ms
+2020-04-09 00:02:11.541  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2020-04-09 00:02:11.753  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2020-04-09 00:02:11.774  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 00:02:11.826  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 00:02:13.455  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:02:13.580  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 00:02:14.822  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:02:16.416  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 00:02:16.433  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 7.585 seconds (JVM running for 2115.919)
+2020-04-09 00:02:16.439  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 06:15:04.659  WARN 27703 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=6h12m22s194ms).
+2020-04-09 10:45:48.062  WARN 27703 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=4h30m13s126ms).
+2020-04-09 10:46:28.129  INFO 27703 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 10:46:28.146  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 10:46:29.058  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 912 ms
+2020-04-09 10:46:31.009  WARN 27703 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/typo.css
+2020-04-09 10:46:31.033  WARN 27703 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/animate.css
+2020-04-09 10:46:31.065  WARN 27703 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/index.css
+2020-04-09 10:46:31.065  WARN 27703 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.min.js
+2020-04-09 10:46:31.065  WARN 27703 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.css
+2020-04-09 10:46:31.065  WARN 27703 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.css
+2020-04-09 10:46:31.556  WARN 27703 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/QR/qrcode.min.js
+2020-04-09 10:46:31.817  WARN 27703 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.js
+2020-04-09 10:46:32.722  WARN 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.min.js
+2020-04-09 10:46:33.196  WARN 27703 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/QR/qrcode.min.js
+2020-04-09 10:46:33.449  WARN 27703 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.js
+2020-04-09 10:46:56.555  WARN 27703 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.css
+2020-04-09 10:46:56.555  WARN 27703 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.css
+2020-04-09 10:46:56.555  WARN 27703 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /css/typo.css
+2020-04-09 10:46:56.555  WARN 27703 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /css/index.css
+2020-04-09 10:46:56.555  WARN 27703 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/animate.css
+2020-04-09 10:47:47.292  INFO 27703 --- [Thread-108] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:47:47.331  INFO 27703 --- [Thread-108] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2020-04-09 10:47:47.495  INFO 27703 --- [Thread-108] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2020-04-09 10:47:49.969  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 10:47:49.969 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 10:47:49.970  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 10:47:51.977  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 10:47:52.036  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 1 repository interfaces.
+2020-04-09 10:47:52.167  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 10:47:55.736  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 10:47:55.758  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 10:47:55.760  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 10:47:55.821  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 10:47:55.824  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5849 ms
+2020-04-09 10:47:57.944  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2020-04-09 10:47:59.221  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2020-04-09 10:47:59.702  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 10:47:59.992  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 10:48:03.742  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:48:04.689  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 10:48:08.511  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 10:48:17.328  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 10:48:17.348  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 27.742 seconds (JVM running for 2392.117)
+2020-04-09 10:48:17.376  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 10:48:21.088  INFO 27703 --- [Thread-114] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:48:21.148  INFO 27703 --- [Thread-114] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2020-04-09 10:48:21.400  INFO 27703 --- [Thread-114] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2020-04-09 10:48:26.468  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 10:48:26.472 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 10:48:26.472  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 10:48:29.936  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 10:48:30.004  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 1 repository interfaces.
+2020-04-09 10:48:31.411  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 10:48:32.807  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 10:48:32.823  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 10:48:32.824  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 10:48:32.844  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 10:48:32.844  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6363 ms
+2020-04-09 10:48:33.563  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2020-04-09 10:48:33.636  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2020-04-09 10:48:33.655  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 10:48:33.766  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 10:48:35.151  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:48:35.278  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 10:48:36.162  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 10:48:39.706  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 10:48:39.712  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 13.577 seconds (JVM running for 2414.48)
+2020-04-09 10:48:39.716  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 10:48:48.864  INFO 27703 --- [Thread-120] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:48:48.875  INFO 27703 --- [Thread-120] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2020-04-09 10:48:48.895  INFO 27703 --- [Thread-120] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2020-04-09 10:48:49.982  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 10:48:49.983 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 10:48:49.983  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 10:48:51.233  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 10:48:51.261  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 1 repository interfaces.
+2020-04-09 10:48:51.355  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 10:48:51.624  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 10:48:51.626  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 10:48:51.626  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 10:48:51.638  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 10:48:51.639  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1653 ms
+2020-04-09 10:48:51.749  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2020-04-09 10:48:51.781  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2020-04-09 10:48:51.860  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 10:48:52.265  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 10:48:53.059  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:48:53.181  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 10:48:55.266  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 10:48:59.968  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 10:48:59.971  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 10.059 seconds (JVM running for 2434.739)
+2020-04-09 10:48:59.975  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 10:55:30.458  INFO 27703 --- [Thread-126] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:55:30.481  INFO 27703 --- [Thread-126] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2020-04-09 10:55:30.500  INFO 27703 --- [Thread-126] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2020-04-09 10:55:44.751  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 10:55:44.753 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 10:55:44.753  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 10:55:46.041  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 10:55:46.065  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 1 repository interfaces.
+2020-04-09 10:55:46.994  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 10:55:47.727  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 10:55:47.741  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 10:55:47.742  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 10:55:47.762  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 10:55:47.762  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3005 ms
+2020-04-09 10:55:48.572  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2020-04-09 10:55:48.633  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2020-04-09 10:55:48.651  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 10:55:48.682  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 10:55:49.178  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:55:49.277  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 10:55:50.208  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 10:55:52.032  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 10:55:52.034  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 7.385 seconds (JVM running for 2846.794)
+2020-04-09 10:55:52.037  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 10:56:13.884  INFO 27703 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 10:56:13.900  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 10:56:14.193  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 292 ms
+2020-04-09 10:56:16.369  WARN 27703 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.css
+2020-04-09 10:56:16.369  WARN 27703 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/index.css
+2020-04-09 10:56:16.369  WARN 27703 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/typo.css
+2020-04-09 10:56:16.369  WARN 27703 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/animate.css
+2020-04-09 10:56:16.703  WARN 27703 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.css
+2020-04-09 10:56:16.703  WARN 27703 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.min.js
+2020-04-09 10:56:17.050  WARN 27703 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/QR/qrcode.min.js
+2020-04-09 10:56:17.060  WARN 27703 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.js
+2020-04-09 10:56:19.223  WARN 27703 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.min.js
+2020-04-09 10:56:20.201  WARN 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/QR/qrcode.min.js
+2020-04-09 10:56:20.301  WARN 27703 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.js
+2020-04-09 10:56:34.843  WARN 27703 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/index.css
+2020-04-09 10:56:34.843  WARN 27703 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /css/animate.css
+2020-04-09 10:56:34.843  WARN 27703 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.css
+2020-04-09 10:56:34.843  WARN 27703 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.css
+2020-04-09 10:56:34.843  WARN 27703 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/typo.css
+2020-04-09 10:57:24.263  INFO 27703 --- [Thread-132] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:57:24.312  INFO 27703 --- [Thread-132] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2020-04-09 10:57:24.369  INFO 27703 --- [Thread-132] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2020-04-09 10:57:25.518  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 10:57:25.519 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 10:57:25.519  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 10:57:27.161  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 10:57:27.203  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2020-04-09 10:57:27.983  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 10:57:28.898  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 10:57:28.902  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 10:57:28.903  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 10:57:29.134  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 10:57:29.134  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3612 ms
+2020-04-09 10:57:29.858  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2020-04-09 10:57:29.914  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2020-04-09 10:57:29.967  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 10:57:30.383  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 10:57:31.291  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:57:31.405  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 10:57:33.004  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 10:57:39.526  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 10:57:39.561  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 14.144 seconds (JVM running for 2954.32)
+2020-04-09 10:57:39.567  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 10:58:10.450  INFO 27703 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 10:58:10.456  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 10:58:10.522  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 66 ms
+2020-04-09 10:58:10.766  INFO 27703 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-09 10:58:11.302  WARN 27703 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/typo.css
+2020-04-09 10:58:11.308  WARN 27703 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/animate.css
+2020-04-09 10:58:11.310  WARN 27703 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/index.css
+2020-04-09 10:58:11.310  WARN 27703 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/prism/prism.css
+2020-04-09 10:58:11.310  WARN 27703 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /lib/tocbot/tocbot.css
+2020-04-09 10:58:11.352  INFO 27703 --- [Thread-141] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:58:11.356  INFO 27703 --- [Thread-141] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2020-04-09 10:58:11.385  INFO 27703 --- [Thread-141] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2020-04-09 10:58:12.939  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 10:58:12.939 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 10:58:12.940  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 10:58:14.161  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 10:58:14.180  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 1 repository interfaces.
+2020-04-09 10:58:14.315  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 10:58:15.469  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 10:58:15.471  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 10:58:15.471  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 10:58:15.511  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 10:58:15.511  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2567 ms
+2020-04-09 10:58:15.916  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2020-04-09 10:58:15.980  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2020-04-09 10:58:16.011  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 10:58:16.099  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 10:58:17.340  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:58:17.450  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 10:58:18.811  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 10:58:20.635  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 10:58:20.645  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 7.794 seconds (JVM running for 2995.403)
+2020-04-09 10:58:20.647  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 10:58:23.708  INFO 27703 --- [Thread-147] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:58:23.711  INFO 27703 --- [Thread-147] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2020-04-09 10:58:23.726  INFO 27703 --- [Thread-147] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2020-04-09 10:58:24.369  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 10:58:24.372 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 10:58:24.372  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 10:58:25.566  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 10:58:25.581  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 1 repository interfaces.
+2020-04-09 10:58:25.675  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 10:58:26.075  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 10:58:26.077  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 10:58:26.077  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 10:58:26.125  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 10:58:26.125  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1751 ms
+2020-04-09 10:58:27.158  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2020-04-09 10:58:27.357  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2020-04-09 10:58:27.404  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 10:58:27.556  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 10:58:28.916  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 10:58:29.027  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 10:58:31.775  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 10:58:33.746  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 10:58:33.748  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 9.439 seconds (JVM running for 3008.505)
+2020-04-09 10:58:33.751  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:07:14.618  INFO 27703 --- [Thread-153] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:07:14.684  INFO 27703 --- [Thread-153] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2020-04-09 11:07:14.751  INFO 27703 --- [Thread-153] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2020-04-09 11:07:16.281  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:07:16.282 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:07:16.282  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:07:17.281  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:07:17.318  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 1 repository interfaces.
+2020-04-09 11:07:17.381  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:07:17.577  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:07:17.578  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:07:17.579  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:07:17.605  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:07:17.606  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1320 ms
+2020-04-09 11:07:17.677  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2020-04-09 11:07:17.926  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2020-04-09 11:07:17.991  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:07:18.359  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:07:18.810  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:07:18.852  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:07:19.073  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:07:20.231  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:07:20.231  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 4.228 seconds (JVM running for 3534.957)
+2020-04-09 11:07:20.233  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:08:11.336  INFO 27703 --- [Thread-159] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:08:11.338  INFO 27703 --- [Thread-159] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2020-04-09 11:08:11.362  INFO 27703 --- [Thread-159] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2020-04-09 11:08:11.720  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:08:11.721 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:08:11.721  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:08:12.004  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:08:12.013  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 1 repository interfaces.
+2020-04-09 11:08:12.069  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:08:12.212  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:08:12.214  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:08:12.215  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:08:12.230  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:08:12.230  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 498 ms
+2020-04-09 11:08:12.300  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2020-04-09 11:08:12.337  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2020-04-09 11:08:12.349  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:08:12.392  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:08:13.163  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:08:13.250  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:08:13.700  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:08:14.786  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:08:14.787  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 3.13 seconds (JVM running for 3589.511)
+2020-04-09 11:08:14.789  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:08:22.240  INFO 27703 --- [Thread-165] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:08:22.243  INFO 27703 --- [Thread-165] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2020-04-09 11:08:22.260  INFO 27703 --- [Thread-165] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2020-04-09 11:08:22.772  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:08:22.773 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:08:22.773  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:08:23.303  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:08:23.312  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 1 repository interfaces.
+2020-04-09 11:08:23.354  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:08:23.481  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:08:23.485  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:08:23.485  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:08:23.513  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:08:23.514  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 572 ms
+2020-04-09 11:08:23.592  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2020-04-09 11:08:23.624  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2020-04-09 11:08:23.638  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:08:23.662  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:08:23.907  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:08:23.960  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:08:24.649  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:08:25.502  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:08:25.504  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 2.786 seconds (JVM running for 3600.228)
+2020-04-09 11:08:25.506  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:11:34.820  INFO 27703 --- [Thread-171] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:11:34.841  INFO 27703 --- [Thread-171] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2020-04-09 11:11:34.864  INFO 27703 --- [Thread-171] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2020-04-09 11:11:35.778  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:11:35.779 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:11:35.779  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:11:36.397  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:11:36.409  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 1 repository interfaces.
+2020-04-09 11:11:36.468  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:11:36.665  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:11:36.666  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:11:36.667  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:11:36.681  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:11:36.681  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 880 ms
+2020-04-09 11:11:36.761  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2020-04-09 11:11:36.806  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2020-04-09 11:11:36.821  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:11:36.850  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:11:37.630  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:11:37.757  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:11:38.002  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:11:39.507  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:11:39.508  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 3.998 seconds (JVM running for 3794.226)
+2020-04-09 11:11:39.511  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:12:05.961  INFO 27703 --- [Thread-177] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:05.974  INFO 27703 --- [Thread-177] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2020-04-09 11:12:06.018  INFO 27703 --- [Thread-177] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2020-04-09 11:12:06.551  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:12:06.551 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:12:06.551  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:12:07.387  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:12:07.429  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 1 repository interfaces.
+2020-04-09 11:12:07.516  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:12:07.828  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:12:07.829  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:12:07.830  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:12:07.852  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:12:07.852  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1297 ms
+2020-04-09 11:12:07.961  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2020-04-09 11:12:07.993  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2020-04-09 11:12:08.016  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:12:08.527  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:12:08.881  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:08.935  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:12:09.212  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:12:10.473  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:12:10.474  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 3.987 seconds (JVM running for 3825.191)
+2020-04-09 11:12:10.476  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:12:14.759  INFO 27703 --- [Thread-183] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:14.760  INFO 27703 --- [Thread-183] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2020-04-09 11:12:14.765  INFO 27703 --- [Thread-183] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2020-04-09 11:12:15.064  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:12:15.064 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:12:15.064  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:12:15.728  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:12:15.751  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 1 repository interfaces.
+2020-04-09 11:12:15.854  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:12:16.134  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:12:16.135  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:12:16.135  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:12:16.144  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:12:16.144  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1078 ms
+2020-04-09 11:12:16.270  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2020-04-09 11:12:16.305  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2020-04-09 11:12:16.318  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:12:16.364  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:12:16.568  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:17.009  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:12:17.490  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:12:18.762  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:12:18.762  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 3.737 seconds (JVM running for 3833.479)
+2020-04-09 11:12:18.764  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:12:20.946  INFO 27703 --- [Thread-189] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:20.952  INFO 27703 --- [Thread-189] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2020-04-09 11:12:21.139  INFO 27703 --- [Thread-189] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2020-04-09 11:12:21.677  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:12:21.677 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:12:21.677  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:12:21.877  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:12:21.890  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 1 repository interfaces.
+2020-04-09 11:12:21.942  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:12:22.068  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:12:22.069  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:12:22.069  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:12:22.077  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:12:22.077  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 398 ms
+2020-04-09 11:12:22.155  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2020-04-09 11:12:22.176  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2020-04-09 11:12:22.185  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:12:22.212  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:12:22.606  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:23.083  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:12:23.362  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:12:24.618  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:12:24.619  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 2.989 seconds (JVM running for 3839.336)
+2020-04-09 11:12:24.622  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:12:27.745  INFO 27703 --- [Thread-195] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:27.750  INFO 27703 --- [Thread-195] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2020-04-09 11:12:27.760  INFO 27703 --- [Thread-195] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2020-04-09 11:12:28.170  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:12:28.170 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:12:28.170  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:12:28.878  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:12:28.938  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 1 repository interfaces.
+2020-04-09 11:12:29.073  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:12:29.257  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:12:29.258  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:12:29.258  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:12:29.265  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:12:29.265  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1092 ms
+2020-04-09 11:12:29.339  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2020-04-09 11:12:29.376  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2020-04-09 11:12:29.393  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:12:29.424  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:12:29.696  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:12:29.793  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:12:30.611  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:12:32.262  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:12:32.263  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 4.146 seconds (JVM running for 3846.979)
+2020-04-09 11:12:32.266  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-09 11:22:30.715  INFO 27703 --- [Thread-201] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:22:30.815  INFO 27703 --- [Thread-201] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2020-04-09 11:22:30.866  INFO 27703 --- [Thread-201] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2020-04-09 11:22:37.064  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:22:37.075  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-04-09 11:22:40.962  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:22:40.971  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2020-04-09 11:22:42.153  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:22:44.673  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:22:44.703  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:22:44.704  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:22:45.034  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:22:45.034  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7951 ms
+2020-04-09 11:22:46.635  WARN 27703 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-04-09 11:22:46.671  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-09 11:22:46.770  INFO 27703 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-09 11:22:46.772 ERROR 27703 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-04-09 11:23:00.603  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 27703 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 11:23:00.606 DEBUG 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 11:23:00.606  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 11:23:03.323  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 11:23:03.373  INFO 27703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 1 repository interfaces.
+2020-04-09 11:23:04.131  INFO 27703 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fbf232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 11:23:04.763  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 11:23:04.773  INFO 27703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 11:23:04.776  INFO 27703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 11:23:04.946  INFO 27703 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-04-09 11:23:04.946  INFO 27703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4327 ms
+2020-04-09 11:23:05.178  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2020-04-09 11:23:06.773  INFO 27703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2020-04-09 11:23:06.807  INFO 27703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 11:23:07.132  INFO 27703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 11:23:09.055  INFO 27703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 11:23:09.337  WARN 27703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 11:23:10.487  INFO 27703 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 11:23:10.506  WARN 27703 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 11:23:10.557  INFO 27703 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-09 11:23:11.656  INFO 27703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 11:23:11.659  INFO 27703 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 11.731 seconds (JVM running for 4486.344)
+2020-04-09 11:23:11.666  INFO 27703 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter matched:
+      - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.HiddenHttpMethodFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver; types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration matched:
+      - @ConditionalOnProperty (spring.mvc.favicon.enabled) matched (OnPropertyCondition)
+
+
+Negative matches:
+-----------------
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#localeResolver:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.locale) did not find property 'locale' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-04-09 11:27:17.492  INFO 27703 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 11:27:17.496  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 11:27:17.580  INFO 27703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 84 ms
+2020-04-09 11:27:17.695  INFO 27703 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-09 11:33:03.034  INFO 27703 --- [Thread-215] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 11:33:03.052  INFO 27703 --- [Thread-215] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 16:06:40.867  INFO 32317 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Starting MyblogApplication on appdeMacBook-Air.local with PID 32317 (/Users/app/Desktop/myblog/target/classes started by app in /Users/app/Desktop/myblog)
+2020-04-09 16:06:40.982 DEBUG 32317 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2020-04-09 16:06:40.991  INFO 32317 --- [restartedMain] com.emrys.myblog.MyblogApplication       : The following profiles are active: dev
+2020-04-09 16:06:43.117  INFO 32317 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-09 16:06:43.329  INFO 32317 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-09 16:06:55.387  INFO 32317 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-09 16:06:56.398  INFO 32317 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 943ms. Found 1 repository interfaces.
+2020-04-09 16:06:58.956  INFO 32317 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71d0d488] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 16:07:02.686  INFO 32317 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 16:07:02.780  INFO 32317 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 16:07:02.781  INFO 32317 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-04-09 16:07:04.244  INFO 32317 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-09 16:07:04.244  INFO 32317 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 20901 ms
+2020-04-09 16:07:05.185  INFO 32317 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 16:07:09.336  INFO 32317 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 16:07:09.932  INFO 32317 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-09 16:07:11.644  INFO 32317 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2020-04-09 16:07:11.657  INFO 32317 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-09 16:07:13.062  INFO 32317 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-09 16:07:14.642  INFO 32317 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-09 16:07:19.686  INFO 32317 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 16:07:19.917  WARN 32317 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-04-09 16:07:23.439  INFO 32317 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 16:07:23.622  WARN 32317 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 16:07:23.733  INFO 32317 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-09 16:07:25.890  INFO 32317 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 16:07:25.904  INFO 32317 --- [restartedMain] com.emrys.myblog.MyblogApplication       : Started MyblogApplication in 51.508 seconds (JVM running for 60.382)
+2020-04-09 16:08:13.624  INFO 32317 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 16:08:13.632  INFO 32317 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 16:08:14.628  INFO 32317 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 995 ms
+2020-04-09 16:08:34.742  WARN 32317 --- [http-nio-8080-exec-9] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [140] milliseconds.
+2020-04-09 16:08:34.927  INFO 32317 --- [http-nio-8080-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-09 16:17:02.884  INFO 32317 --- [Thread-61] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 16:17:02.965  INFO 32317 --- [Thread-61] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 16:17:03.510  INFO 32317 --- [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 16:17:04.152  INFO 32317 --- [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

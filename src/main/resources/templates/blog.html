@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* .fa {
+            font-size: 50px;
+            cursor: pointer;
+            user-select: none;
+            color: red;
+            rotate: none;
+        }
+        
+        .fa:hover {
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- head: head bar with -->
+    <nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment in-padded-tb-mini ty-shadow-small">
+        <div class="ui container">
+            <div class="ui stackable inverted secondary  menu">
+                <h2 class="ui olive header item"> Emrys Yang</h2>
+                <a href="#" class="in-item item in-mobile-hide"><i class="home icon"></i>Home </a>
+                <a href="#" class="in-item item in-mobile-hide">Category </a>
+                <a href="#" class="in-item item in-mobile-hide"><i class="tags icon"></i>Tags </a>
+                <a href="#" class="in-item item in-mobile-hide">Archive </a>
+                <a href="#" class="in-item item in-mobile-hide"><i class="chess queen icon"></i>
+                    About me</a>
+                <div class="right in-item menu in-mobile-hide">
+                    <div class="item">
+                        <div class="ui transparent icon input">
+                            <input type="text" placeholder="Search content……">
+                            <i class="inverted search icon"></i>
+                            <!-- <i class="search link icon"></i> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button in-top-right in-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!-- middle -->
+    <div class="animated pulse in-container-tiny in-padded-tb-spacehuge">
+        <div class="ui container">
+            <!-- head -->
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/1/100/100" alt=" " class="ui avatar image ">
+                        <div class="content">
+                            <a href="#" class="header">Emrys Yang</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar alternate icon"></i> 2019-08-24
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i> 60
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <!-- Image -->
+                <img src="../static/images/cyberpunk.png" th:src="@{/images/cyberpunk.png}" alt="" class="ui myimg fluid rounded image">
+            </div>
+            <div class="ui olive attached padded segment">
+                <!-- Content -->
+                <div class="ui right aligned basic segment">
+                    <div class="ui orange basic label">original</div>
+                </div>
+                <h2 class="ui typo typo-selection center aligned header">A Rainy Night</h2>
+                <div id="content" class="typo typo-selection js-toc-content bl-padded-lr-responsive in-padded-tb-spacelarge">
+                    <h2 id="section1"> 1. The Begining</h2>
+                    <p>AD. 3018, St. Louis, Missouri, USA.
+                    </p>
+                    <p>I left that damn tobacco-box at the police station.</p>
+                    <p>Moran said to himself, sat in his worm-eaten velvet sofa, and put his old pipe back on the coffee table.</p>
+                    <p>The household Android in front of him had reached A-level damage.</p>
+                    <p>“What happened?” Moran asked casually. He did not even look up at the young man who was standing in the doorway and was almost all wet. The old man stood up and opened the old radio on his side.</p>
+                    <p>“It was a ... a car accident.” The young guy in a fashion baseball jacket rubbed his red hand together. His whole body was shaking due to the cold rain outside. His face was frozen and pale, and there was a deep knife scar on his left
+                        eyebrow. The rain dripped down from the corner of the young man’s coat to the doormat. He seemed to want to enter the house, only to find that the clutter in the living room had almost buried everything except Moran and the sofa.
+                        At his feet, there was a pile of messy wires and copper tubes that made people have nowhere to go.</p>
+                    <p>Moran did not say a word. He pulled out a set of probes and a computer from the corner of the living room and inserted the probe into the D-type connector of the Android's chest. A bunch of messy data steam was cast on the computer
+                        screen immediately.</p>
+                    <p>Soft classical music was playing on the radio, and the young man was still standing at the door, with his brows wrinkled. The house was not warm at all, and the old mechanic had no intention to talk to him. He had to transfer his focus
+                        on to the broken robot.</p>
+                    <p>It was a dark-haired female Andriod.</p>
+                    <p>The raindrops slid into the pale mouth along its white porcelain cheeks, causing faint current sensing.</p>
+                    <p>A piece of light blue electronic light, weakly struggling in its pupils like a firefly. On its neck, the light-colored biomimetic skin was roughly cut by some hard object, and the yellowish dilute sulfuric acid oozes from its black
+                        scar on the chin and drips on the cheap plastic carpet at Moran's house. The silicon-phosphorus shell of the right arm is chopped by some kind of hard object and pulled down in a twisted manner to reveal a red and blue wire that
+                        is nearly broken.</p>
+                    <p>“Hey, can you fix this bitch for me?“</p>
+                    <p>The young man standing at the door asked anxiously, "Her database was ruined and I need to you to restore her basic functions. I’m going to sell it on eBay.“</p>
+                    <p>Moran glanced at him, wearing his rubber gloves quickly, and skillfully using a hand drill to open the screws of the Andriod’s temple, and taking out a translucent, crack-filled memory stick. Then he quickly glanced at the holographic
+                        projection clock on the wall. At ten o'clock in the evening.</p>
+                    <p>Moran’s home was in the quietest corner of the C-level blocks. Two lonely men can only hear the sound of rain on the roof, and a few police cars whistle in the distance, and then quickly disappeared.</p>
+                    <p>“Three hours, 150 bucks.“</p>
+                    <p>“Please, can you make it faster?“ The voice of the young man was full of tension.</p>
+                    <p>Moran looked up suddenly, and the disdain in his eyes made the young man stunned.</p>
+                    <p>“Where the hell do you think you are? This is MY PRIVATE workspace! If you have further problems, get out and turn to the CyberEra flagship store five blocks away and ask for their help.“</p>
+                    <p>“Sorry if you are offended, Mr. Moran. You know, I am just in a hurry." The guy wiped the rain on his face and could not stop looking outside of the window from time to time. "But you see, there’s only one maintenance store in the
+                        entire C-level blocks, and I can't afford the repair fee if I went to the CyberEra store..."</p>
+                    <p>“Then shut the fuck up.“</p>
+                    <h2 id="section2">2. The Radio</h2>
+                    <p>The classical music played on the radio came to an abrupt end.</p>
+                    <p>“Welcome to Even…(buzz) ... News We Tell. My name is Ro…(buzz)” The female announcer ’s voice was intermittent due to the unstable signal.</p>
+                    <p>“At two o'clock this after…(buzz), the police received an alarm call from the CyberEra … (buzz)... store. After Ms. L and her child’s death in the C-level … (buzz) ... by unidentified people last night. Ms. L’s household Android remained
+                        unknown. This robot has a female … (buzz) ... blue eyes, and black hair. It’s ... (buzz) … to be taken away by suspects. The police are vigorously searching, we are here to … (buzz)... nearby residents... to be vigilant ... (buzz)
+                        … pay attention.“</p>
+                    <p>The young man’s face changed instantly. He stepped back, with a “bang” sound he slammed into the wooden door behind him.</p>
+                    <p>Moran’s hand paused for a moment, then seemed to have heard nothing. He calmly picked up the tools on the side and start tightening the bolts.</p>
+                    <p>“Well...we are all in 3018 now, and St. Louis still has the poorest social security in the U.S.“ the young man stared at the back of the busy old man. </p>
+                    <p>A flick knife, made of fine steel and shining down the pale light, peeked out from under the wide cuff of his baseball shirt. "We have a lot of plastic garbages with black hair and … and … blue eyes in these blocks, ” He said. “That
+                        robot could be … could be anywhere. Am I right, s-sir?“.</p>
+                    <p>“None of my business,“ Moran said coldly and did not stop working at all. "I care nothing except making my god damned money.“</p>
+                    <p>“Yeah… now that’s … that’s the right attitude.“ The young man said, he smiled in relief, and counted a few cashes from the dirty jeans, “You … you keep your money, I’ll mind my own business. ”</p>
+                    <p>The old mechanic ignored him and did not pick up the of cash.</p>
+                    <p>Everything went to silence again. The rain and the smell of oil mixed together, filled in this dilapidated, dusty room. Outside the window, the lights of the police car flashed again and quickly disappeared into the thick darkness.
+                        The holographic clock went through an hour and gave off a slight electronic sound.</p>
+                    <p>“You really should hire a nanny.“ The young man watched a donkey and climbed through the shadow of carton hills, commenting.</p>
+                    <p>“My daughter used to live with me and helped me do some housework. Later she got pregnant and moved out with a jerk.“ Surprisingly, Moran did not ignore the young man again but respond to his insignificant words. The old guy lifted
+                        his head from his computer and all pieces of equipment, and the gray eyes stared at the young man flatly. "Better to hire a god damn Andriod then to raise a kid.“</p>
+                    <p>“Well,” The young man shrugged. "Then why not hiring a robot?“</p>
+                    <p>“499.99 dollars per month, what makes you think I can afford that? People in CyberEra are devils who master at marketing.” The old man groaned and spit came out of his mouth, splattered on the computer screen. “Now, now these younger
+                        generations, they are paid poorly but spend like the riches. Laziness makes their lives heavily depend on these damn expensive plastic toys, even my daughter is no exception.“</p>
+                    <p>“St. Louis,” the old one said, “the worst-employed city in the United States. Most people can’t even afford their mortgage. Yet, they are still borrowing money to buy an Andriod, and chose to starve to death on the street.”</p>
+                    <p>The young man listened quietly and somehow disagree. The old man did save some money, but it will never be enough to help him get rid of poverty. He couldn't even afford to buy a new sweater without dirty dust or a nice radio with
+                        a better sound system. God knows when he dies, will he be able to afford his own tombstone.</p>
+                    <p>He smiled coldly. "What is the use of saving money? Poverty has pushed people in this city to corner, a dead end! I say I could do anything to keep myself alive and get more money.“</p>
+                    <p>“So, you think you are smart, eh?" Moran's fingers danced fast on the computer, and the screen sent a tweet electronic sound. "Of course, I agree that everyone has their ways to live, and everyone has their rights to live.“</p>
+                    <p>“YES! Yes, I am just exercising my rights … My power,“ the young man laughed loudly. He stood up and patted his beautiful clothes. "Look at me, I’m the one who defeats the poverty!“</p>
+                    <p>“Deprive others’ power to live to satisfy your own desire? I say you may win everything in your pocket," The old man closed the computer and unplugged the cable. "But you lose everything for your soul.“</p>
+                    <p>“I have fixed the damn thing,“ Moran said flatly when the young man angrily pulled out his knife.</p>
+                    <p>The young man looked at the robot which was not moving at all and still covered with scars. He yelled angrily. "What exactly have you fixed?!"</p>
+                    <p>“I wasn’t talking to you, you dumbass.“ The old man did not even glance him for a millisecond."Do you really believe that the police car will patrol twice in the quietest small corner of the C-level blocks?" He picked up the computer
+                        and the data chip, delivered to the strong, tall police officers who broke into the door. Moran’s gray eyes reflect the face of young people that filled with fear. </p>
+                    <p>And He said with a peaceful smile. "This broken Andriod recorded the evidence that he killed my daughter, and I fixed it."
+                    </p>
+                </div>
+                <!-- tags -->
+                <div class="bl-padded-lr-responsive">
+                    <div herf="#" class="ui basic olive in-trans-low left pointing label">cyberpunk</div>
+                </div>
+                <!-- Wechat Reward -->
+
+                <!-- <div class="ui center aligned basic segment">
+                    <button id="ppButton" class="ui basic orange circular button">Wechat Reward 赞赏</button>
+                </div>
+                <div class="ui payW flowing popup top left transition hidden">
+                    <div class="ui orange basic in-trans-low label">
+                        <div class="ui images" style="font-size: inherit !important;">
+                            <div class="image">
+                                <img src="./static/images/WCP.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div class="">Wechat Payment</div>
+                            </div>
+                            <div class="image">
+                                <img src="./static/images/WCP.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div class="">Wechat Payment2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="ui center aligned basic segment">
+                    <!-- <h3 class="ui mypop olive in-trans-mid header">Like this blog!</h3> -->
+<!--                    <i onclick="myFunction(this)" class="fa fa-heart-o fa-spin fa-3x fa-fw"></i>-->
+<!--                    <br>-->
+<!--                    <br>-->
+                    <div class="ui mypop mini red button"> <i class="angle double up icon"></i>like me! </div>
+                </div>
+                <div class="ui flowing popup top left transition hidden">
+                    <div class="ui myrate myrate2 heart rating" data-rating="1" data-max-rating="5"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui attached positive message">
+            <div class="ui middle aligned grid">
+                <div class="eleven wide column">
+                    <ui class="list">
+                        <li>Author: Emrys Yang (contact Author)</li>
+                        <li>Published Time: 2019-09-01 00:07 </li>
+                        <li>Copyright: Reprint allowed - none business use - keep the orignal Author name</li>
+                    </ui>
+                </div>
+                <div class="five wide column">
+                    <img src="../static/images/WCP.jpg" th:src="@{/images/WCP.jpg}" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                </div>
+            </div>
+        </div>
+        <div id="comment-segment" class=" ui bottom attached segment ">
+            <!-- comment segment -->
+            <div class="ui olive segment">
+                <div class="ui comments">
+                    <h3 class="ui dividing header">Comments</h3>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/id/12/100/100">
+                        </a>
+                        <div class="content">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Today at 5:42PM</span>
+                            </div>
+                            <div class="text">
+                                How artistic!
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/id/10/100/100">
+                        </a>
+                        <div class="content">
+                            <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                                <span class="date">Yesterday at 12:30AM</span>
+                            </div>
+                            <div class="text">
+                                <p>This has been very useful for my research. Thanks as well!</p>
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Reply</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://picsum.photos/id/11/100/100">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Jenny Hess</a>
+                                    <div class="metadata">
+                                        <span class="date">Just now</span>
+                                    </div>
+                                    <div class="text">
+                                        Elliot you are always so right :)
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="https://picsum.photos/id/13/100/100">
+                        </a>
+                        <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                                <span class="date">5 days ago</span>
+                            </div>
+                            <div class="text">
+                                Dude, this is awesome. Thanks so much
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="ui form">
+                <div class="field in-mobile-wide in-margin-bottom-mini">
+                    <textarea name="content" placeholder="Free to leave your comment here..."></textarea>
+                </div>
+                <div class="fields">
+                    <div class="field  in-mobile-wide in-margin-bottom-mini">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="nickname" placeholder="name">
+                        </div>
+                    </div>
+                    <div class="field in-mobile-wide in-margin-bottom-mini">
+                        <div class="ui left icon input">
+                            <i class="envelope icon"></i>
+                            <input type="text" name="emial" placeholder="email address">
+                        </div>
+                    </div>
+                    <div class="field in-mobile-wide in-margin-bottom-mini">
+                        <div class="ui olive in-trans-low in-mobile-wide button">
+                            <i class="icon edit"></i> Add Reply
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="in-padded in-fixed in-right-bottom">
+        <div class="ui vertical icon buttons">
+            <button type="button" class="ui toc olive button"><i class="list ul icon"></i> Index</button>
+            <a href="#comment-segment" class="ui olive button">Comment</a>
+            <button class="ui wechat icon button"><i class="weixin icon"></i></button>
+            <div id="toTop-button" class="ui icon button"><i class="chevron up icon"></i></div>
+        </div>
+    </div>
+
+    <div class="ui toc-container flowing popup transition hidden" style="width: 250px !important;">
+        <ol class="js-toc">
+
+        </ol>
+    </div>
+
+    <div id="qrcode" class="ui wechat-qr flowing popup transition hidden" style="width: 130px !important;">
+        <!-- <img src="./static/images/WCP.jpg" alt="" class="ui rouded image" style="width: 100px"> -->
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- foot -->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment in-padded-tb-spacem ">
+        <div class="ui center aligned container ">
+            <div class="ui inverted divided stackable grid ">
+                <div class="three wide column ">
+                    <div class="ui inverted link list ">
+                        <div class="item ">
+                            <img src="../static/images/WCP.jpg " th:src="@{/images/WCP.jpg}" alt=" " class="ui rounded image " style="width: 120px; ">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column ">
+                    <h4 class="ui inverted header in-text-thin in-text-spaced ">Latest Posts</h4>
+                    <div class="ui inverted link list ">
+                        <a href="# " class="item ">Avangers Series: Captain America</a>
+                        <a href="# " class="item ">Avangers Series: Iron Man</a>
+                        <a href="# " class="item ">Avangers Series: Loki</a>
+                    </div>
+                </div>
+
+                <div class="three wide column ">
+                    <h4 class="ui inverted header in-text-thin in-text-spaced ">Contact Me</h4>
+                    <div class="ui inverted link list ">
+                        <a href="# " class="item ">Email: feijun1997@gmail.com</a>
+                        <a href="# " class="item ">WeChat: feijun1997</a>
+                        <a href="# " class="item ">Facebook: TBA</a>
+                    </div>
+                </div>
+                <div class="seven wide column ">
+                    <h4 class="ui inverted header in-text-thin in-text-spaced ">Emrys Yang</h4>
+
+                    <p class="in-trans-low ">This is a personal blog design for posting my personal thoughts, my cats, my artworks, and some interesting short fictions all written originally by me.</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider "></div>
+            <p class="in-text-thin in-text-spaced in-trans-mid ">Copyright © 2019 Emrys Yang </p>
+        </div>
+
+    </footer>
+
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+
+    <script src="../static/lib/tocbot/tocbot.min.js"></script>
+    <script src="../static/lib/QR/qrcode.min.js"></script>
+    <script src ="../static/lib/prism/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <!--/*/</th:block>/*/-->
+
+
+
+
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.in-item').toggleClass('in-mobile-hide');
+        });
+
+        $('.wechat').popup({
+            popup: $('.wechat-qr'),
+            position: 'left center'
+        });
+
+        $('.mypop').popup({
+            popup: $('.myrate2'),
+            on: 'click',
+            position: 'bottom center'
+        });
+        $('.toc.button').popup({
+            popup: $('.toc-container.popup'),
+            on: 'click',
+            position: 'left center'
+        });
+
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.js-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.js-toc-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            // hasInnerContainers: true,
+        });
+
+        var qrcode = new QRCode("qrcode", {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 110,
+            height: 110,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        $('.myimg')
+            .transition({
+                animation: 'pulse',
+                reverse: true,
+                interval: 200
+            });
+
+        $('.myrate')
+            .rating('setting', 'clearable', true);
+
+        function myFunction(x) {
+            x.classList.toggle("fa-gratipay");
+        }
+        $('#toTop-button').click(function() {
+            $(window).scrollTo(0, 500);
+        });
+    </script>
+</body>
+
+</html>
